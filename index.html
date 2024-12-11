@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <script src="https://kit.fontawesome.com/473f501ade.js" crossorigin="anonymous"></script>
+<h1>Documentación HTML</h1>
+  <nav id="navbar">
+    <ul class="menu">
+        <li><header><i class="fa-solid fa-bars"></i>.</header>
+            <ul class="dropdown-content">
+                <li><a class="nav-link" href="#Introducción">Introducción</a></li>
+                <li><a class="nav-link" href="#Elementos_Básicos">Elementos Básicos</a></li>
+                <li><a class="nav-link" href="#Etiquetas_y_Atributos">Etiquetas y Atributos</a></li>
+                <li><a class="nav-link" href="#Enlaces_e_Imágenes">Enlaces e Imágenes</a></li>
+                <li><a class="nav-link" href="#Listas_y_Tablas">Listas y Tablas</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+  <main id="main-doc">
+    
+    <section id="Introducción" class="main-section intro">
+      <header>
+        <h2>Introducción</h2>
+      </header>
+      <p>HTML (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para crear y estructurar páginas web. 
+        Fue desarrollado por Tim Berners-Lee, un científico británico, en 1991 mientras trabajaba en el CERN 
+        (Organización Europea para la Investigación Nuclear). Berners-Lee diseñó HTML como una forma de compartir documentos 
+        científicos y conectar información a través de hipervínculos.</p>
+        
+        <p>HTML permite a los desarrolladores:</p>
+        <ul>
+            <li>Definir la estructura y el contenido de una página web.</li>
+            <li>Utilizar etiquetas que describen elementos como encabezados, párrafos, enlaces e imágenes.</li>
+            <li>Incluir otros componentes multimedia.</li>
+            <li>Mejorar la semántica, accesibilidad y capacidades multimedia con HTML5.</li>
+        </ul>
+    </section>
+
+    <section id="Elementos_Básicos" class="main-section">
+      <header>
+        <h2>Elementos Básicos</h2>
+      </header>
+      <p>En HTML, los elementos son las etiquetas utilizadas para estructurar el contenido de una página. Los elementos
+        básicos incluyen:</p>
+      <ul>
+        <li><code>html</code>: Define el documento HTML.</li>
+        <li><code>head</code>: Contiene información meta sobre el documento, como el título y los enlaces a hojas de
+          estilo y scripts.</li>
+        <li><code>title</code>: Define el título del documento, que se muestra en la barra de título del navegador.</li>
+        <li><code>body</code>: Contiene el contenido visible de la página, como texto, imágenes y enlaces.</li>
+        <li><code>h1</code>, <code>h2</code>, <code>h3</code>, <code>h4</code>, <code>h5</code>, <code>h6</code>:
+          Definen los encabezados o títulos de diferentes niveles.</li>
+      </ul>
+      <p>Para mas información acerca de los distintos elementos disponibles en HTML puede acceder <a
+          href="https://developer.mozilla.org/es/docs/Web/HTML/Element" target="_blank">aquí</a>.</p>
+    </section>
+
+    <section id="Etiquetas_y_Atributos" class="main-section">
+      <header>
+        <h2>Etiquetas y Atributos</h2>
+      </header>
+      <p>Cada elemento en HTML puede tener atributos que modifican su comportamiento o apariencia. Los atributos se
+        definen dentro de la etiqueta de inicio y proporcionan información adicional. Algunos ejemplos comunes de
+        atributos son:</p>
+      <ul>
+        <li><code>href</code>: Utilizado en enlaces (<code>a</code>) para especificar la URL de destino.</li>
+        <li><code>src</code>: Utilizado en imágenes (<code>img</code>) para especificar la ruta de la imagen.</li>
+        <li><code>alt</code>: Proporciona un texto alternativo para imágenes que no se pueden mostrar.</li>
+        <li><code>class</code>: Asigna una clase CSS a un elemento para aplicar estilos específicos.</li>
+      </ul>
+      <p>Para mas información acerca de las etiquetas y atributos disponibles en HTML puede acceder <a
+          href="https://developer.mozilla.org/es/docs/Web/HTML/Attributes" target="_blank">aquí</a>.</p>
+    </section>
+
+    <section id="Enlaces_e_Imágenes" class="main-section">
+      <header>
+        <h2>Enlaces e Imágenes</h2>
+      </header>
+      <p>HTML proporciona elementos para agregar enlaces e imágenes a una página web. </p>
+      <p>Los enlaces son elementos fundamentales en HTML que permiten conectar diferentes páginas web y recursos en la
+        World Wide Web. Se crean utilizando la etiqueta <code>a</code> (ancla) y se definen mediante el atributo
+        <code>href</code>, que especifica la URL de destino. Cuando los usuarios hacen clic en un enlace, son
+        redirigidos a la dirección web asociada.</p>
+
+      <code class="codigo">
+&lt;a href="https://www.ejemplo.com" target="_blank"&gt;Abrir en nueva pestaña&lt;/a&gt;
+  </code>
+      <p>El ejemplo de arriba nos muesta el código de un enlace a la página "https://www.ejemplo.com", pero tambien
+        hemos utilizado otro atributo llamado <code>target</code> que determina donde se abriran los enlaces. Este puede
+        tener los siguientes valores:</p>
+
+      <ul>
+        <li><code>_self</code> (predeterminado): El enlace se abre en la misma ventana o pestaña.</li>
+        <li><code>_blank</code>: El enlace se abre en una nueva ventana o pestaña del navegador.</li>
+        <li><code>_parent</code>: El enlace se abre en el marco superior del marco actual.</li>
+        <li><code>_top</code>: El enlace se abre en la ventana completa del navegador, reemplazando cualquier marco
+          existente.</li>
+      </ul>
+    </section>
+
+    <section id="Listas_y_Tablas" class="main-section">
+      <header>
+        <h2>Listas y Tablas</h2>
+      </header>
+      <p>HTML ofrece elementos para crear listas y tablas que ayudan a organizar el contenido de manera estructurada.
+      </p>
+      <p>Para listas, los elementos principales son:</p>
+      <ul>
+        <li><code>ul</code>: Lista no ordenada.</li>
+        <li><code>ol</code>: Lista ordenada.</li>
+        <li><code>li</code>: Elemento de la lista.</li>
+      </ul>
+
+      <p>Para tablas, los elementos principales son:</p>
+      <ul>
+        <li><code>table</code>: Define una tabla.</li>
+        <li><code>tr</code>: Define una fila en la tabla.</li>
+        <li><code>td</code>: Define una celda en la fila.</li>
+      </ul>
+
+    </section>
+
+  </main>
+</body>
+
+</html>
